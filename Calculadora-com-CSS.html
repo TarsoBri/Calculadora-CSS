@@ -1,0 +1,168 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+
+            #calculadora{
+                margin: 50px auto;
+                font-family: sans-serif;
+                border-radius: 20px;
+                font-size: 24px;
+                width: 300px;
+                height: 500px;
+                padding: 30px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+                background-image: linear-gradient(#d4d4d4, rgb(139, 138, 138));
+                
+                display: grid;
+                grid-gap: 10px;
+                grid-template-areas:
+                'display    display    display    display'
+                'botão-1    botão-2    botão-3    botão-4'
+                'botão-5    botão-6    botão-7    botão-8'
+                'botão-9    botão-10   botão-11   botão-12'
+                'botão-13   botão-14   botão-15   mais'
+                'botão-13   botão-14   botão-15   mais'
+                'zero       zero       botão-16   mais';
+            }
+
+
+            .botão{
+                border: 1px solid black;
+                font-size: 24px;
+                padding: 20px;
+            }
+            .botão:hover{
+                background-color: rgb(211, 211, 211);
+                transition: all .1s;
+            }
+
+            #display{
+                grid-area: display;
+                border: 2px solid white;
+                border-right: 2px solid #797979;
+                border-bottom: 2px solid #797979;
+                padding: 25px;
+                text-align: end;
+                margin-bottom: 20px;
+                background-image: linear-gradient(rgb(206, 206, 206), white);
+            }
+
+            .botão-1{
+                grid-area: botão-1;  
+            }
+
+            .botão-2{
+                grid-area: botão-2;
+            }
+
+            .botão-3{
+                grid-area: botão-3;
+            }
+
+            .botão-4{
+                grid-area: botão-4;
+            }
+
+            .botão-5{
+                grid-area: botão-5;
+            }
+
+            .botão-6{
+                grid-area: botão-6;
+            }
+
+            .botão-7{
+                grid-area: botão-7;
+            }
+
+            .botão-8{
+                grid-area: botão-8;
+            }
+
+            .botão-9{
+                grid-area: botão-9;
+            }
+
+            .botão-10{
+                grid-area: botão-10;
+            }
+
+            .botão-11{
+                grid-area: botão-11;
+            }
+
+            .botão-12{
+                grid-area: botão-12;
+            }
+
+            .botão-13{
+                grid-area: botão-13;
+            }
+
+            .botão-14{
+                grid-area: botão-14;
+            }
+
+            .botão-15{
+                grid-area: botão-15;
+            }
+
+            #mais{
+                grid-area: mais;
+                background-color: rgb(165, 165, 165);
+                border: 2px solid white;
+                border-right: 2px solid #797979;
+                border-bottom: 2px solid #797979;
+                font-size: 24px;
+            }
+            #mais:hover{
+                background-color: rgb(216, 216, 216);
+                transition: all .1s;
+            }
+
+            #zero{
+                grid-area: zero;
+                background-color:  rgb(165, 165, 165);
+                font-size: 24px;
+                border: 2px solid white;
+                border-right: 2px solid #797979;
+                border-bottom: 2px solid #797979;
+                
+            }
+            #zero:hover{
+                background-color: rgb(216, 216, 216);
+                transition: all .1s;
+            }
+
+            .botão-16{
+                grid-area: botão-16;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <section id="calculadora">
+            <div id="display">0</div>
+
+            <button class="botão botão-1">AC</button> <button class="botão botão-2">%</button> <button class="botão botão-3">x</button> <button class="botão botão-4">/</button>
+            <button class="botão botão-5">7</button> <button class="botão botão-6">8</button> <button class="botão botão-7">9</button> <button class="botão botão-8">=</button>
+            <button class="botão botão-9">4</button> <button class="botão botão-10">5</button> <button class="botão botão-11">6</button> <button class="botão botão-12">-</button>
+            <button class="botão botão-13">1</button> <button class="botão botão-14">2</button> <button class="botão botão-15">3</button> <button id="mais">+</button>
+            <button id="zero">0</button> <button class="botão botão-16">,</button> 
+
+        </section>
+        
+    </body>
+</html>
